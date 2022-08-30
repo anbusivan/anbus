@@ -1,17 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import MyImage from './keevillage01.jpeg';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Events from './pages/events';
+import AnnualReport from './pages/annual';
+import Teams from './pages/team';
+import Blogs from './pages/blogs';
+import SignUp from './pages/signup';
 
 function App() {
-  return (
-    <div className="App">
-      <img className='img' src={MyImage}></img>
-      <h3>"The soul of India lives in its villages" - Mahatma Gandhi. </h3>
-      <p>My village is a petit abode for happy people.  Here they live in harmony and peace. </p>
-      <p>The village people are very hardworking and thus they must have a good source of upliftment.</p>
-      <p>The farmers should be facilitated by helping them to leverage their sales, make them notified about the modern techniques used in farming, and give them compensation and knowledge of the true market price of their yield.</p>
-    </div>
-  );
+return (
+	<Router>
+	<Navbar />
+	<Switch>
+		<Route path='/home' exact component={Home} />
+		<Route path='/about' component={About} />
+		<Route path='/events' component={Events} />
+		<Route path='/annual' component={AnnualReport} />
+		<Route path='/team' component={Teams} />
+		<Route path='/blogs' component={Blogs} />
+		<Route path='/sign-up' component={SignUp} />
+	</Switch>
+	</Router>
+);
 }
 
 export default App;
