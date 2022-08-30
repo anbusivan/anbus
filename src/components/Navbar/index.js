@@ -19,7 +19,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink to='/about' activeStyle>
-            About
+            About Us
           </NavLink>
           <NavLink to='/events' activeStyle>
             Events
@@ -28,10 +28,22 @@ const Navbar = () => {
             Annual Report
           </NavLink>
           <NavLink to='/team' activeStyle>
-            Teams
+            Teams/Contact
+          </NavLink>
+          <NavLink to='/gallery' activeStyle>
+          Gallery
           </NavLink>
           <NavLink to='/blogs' activeStyle>
-            Blogs
+          Blogger Speaks
+          </NavLink>
+          <NavLink to='/testmonialss' activeStyle>
+          Testmonials
+          </NavLink>
+          <NavLink to='/opinion' activeStyle>
+          Opinion
+          </NavLink>
+          <NavLink to='/experience' activeStyle>
+          Experiences
           </NavLink>
           <NavLink to='/sign-up' activeStyle>
             Sign Up
