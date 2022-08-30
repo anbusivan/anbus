@@ -36,7 +36,7 @@ const Navbar = () => {
           <NavLink to='/blogs' activeStyle>
           Blogger Speaks
           </NavLink>
-          <NavLink to='/testmonialss' activeStyle>
+          <NavLink to='/testmonials' activeStyle>
           Testmonials
           </NavLink>
           <NavLink to='/opinion' activeStyle>
