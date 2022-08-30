@@ -1,6 +1,6 @@
 import React from 'react';
   
-const Blogs = () => {
+const Opinians = () => {
   return (
     <div
       style={{
@@ -25,4 +25,4 @@ const Blogs = () => {
   );
 };
   
-export default Blogs;
+export default Opinians;

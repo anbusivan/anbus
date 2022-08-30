@@ -1,6 +1,6 @@
 import React from 'react';
   
-const Blogs = () => {
+const Gallery = () => {
   return (
     <div
       style={{
@@ -11,18 +11,15 @@ const Blogs = () => {
        
       }}
     >
-  <form>
-            
+        <form>
             <div className = "field1">
-           
             <textarea placeholder="Title"/>
             <textarea placeholder="Comments"/>
             </div>
-            
             <button className="button button1"  type = "submit" id= "submitBtn" > submit</button>
         </form>
     </div>
   );
 };
   
-export default Blogs;
+export default Gallery;
